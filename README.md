@@ -1,2 +1,2 @@
-# mono-to-micro
-Break the sample monolithic app down into microservices using Docker and k8s
+# monolith-to-microservices
+ Break the sample monolith app down into microservices in k8s
