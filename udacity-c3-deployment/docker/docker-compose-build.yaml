@@ -3,7 +3,6 @@ services:
   reverseproxy:
     build:
       context: .
-<<<<<<< HEAD
     image: andriesekt/reverseproxy 
   backend_user:
     build:
@@ -17,18 +16,3 @@ services:
     build:
       context: ../../udacity-c3-frontend  
     image: andriesekt/udacity-frontend:local
-=======
-    image: scheele/reverseproxy 
-  backend_user:
-    build:
-      context: ../../udacity-c3-restapi-user
-    image: scheele/udacity-restapi-user
-  backend_feed:
-    build:
-      context: ../../udacity-c3-restapi-feed  
-    image: scheele/udacity-restapi-feed
-  frontend:
-    build:
-      context: ../../udacity-c3-frontend  
-    image: scheele/udacity-frontend:local
->>>>>>> 13942c4c9f0a7b77fb912411388e70ddc20b085b

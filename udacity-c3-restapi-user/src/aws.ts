@@ -9,11 +9,7 @@ AWS.config.credentials = credentials;
 
 export const s3 = new AWS.S3({
   signatureVersion: 'v4',
-<<<<<<< HEAD
   region: c.aws_region,
-=======
-  region: c.aws_reigion,
->>>>>>> 13942c4c9f0a7b77fb912411388e70ddc20b085b
   params: {Bucket: c.aws_media_bucket}
 });
 
