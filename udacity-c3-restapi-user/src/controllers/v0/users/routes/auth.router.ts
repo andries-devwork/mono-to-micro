@@ -28,11 +28,7 @@ function generateJWT(user: User): string {
 }
 
 export function requireAuth(req: Request, res: Response, next: NextFunction) {
-<<<<<<< HEAD
  //  return next();
-=======
-//   return next();
->>>>>>> 13942c4c9f0a7b77fb912411388e70ddc20b085b
     if (!req.headers || !req.headers.authorization){
         return res.status(401).send({ message: 'No authorization headers.' });
     }
