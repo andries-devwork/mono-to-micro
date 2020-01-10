@@ -78,10 +78,32 @@ Apply the settings, services and deployments using `kubectl` and the command
 
     ```
     > kubectl get pods
-    
+
     NAME                            READY   STATUS    RESTARTS   AGE
     backend-feed-745b7ffb7b-twqwm   1/1     Running   0          30h
     backend-user-dfc6c559b-z8tgk    1/1     Running   0          30h
     frontend-5974c68978-scnmr       1/1     Running   0          24h
     reverseproxy-5cdd844f8f-45w8m   1/1     Running   0          30h
     ```
+
+## Project Submission Criteria
+
+- [x] Screenshot of TravisCI which shows the successful build and deploy steps
+- [x] The public GitHub repo and the docker hub images
+
+  ```sh
+  git clone https://github.com/andries-devwork/mono-to-micro.git
+  docker pull andriesekt/reverseproxy
+  docker pull andriesekt/udacity-frontend
+  docker pull andriesekt/udacity-restapi-feed
+  docker pull andriesekt/udacity-frontend:local
+  ```
+  
+- [x] Screenshot of `kubectl` get pod which shows all running containers
+- [x] Screenshot of the application
+
+### AWS CloudWatch
+
+A resource group was created for the EKS cluster.  System resources can be monitored through the dashboard:
+
+![aws-cloudwatch](./udagram-aws-cloudwatch.png)
