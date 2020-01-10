@@ -2,6 +2,8 @@
 
 Udagram is a simple image feed application.  The functionality isn't too important, what's important is the structure.  We have here an example of a microservices driven backend that can be scaled and deployed in a cloud native way.  
 
+![udagram-screenshot-kitten](./udagram-screen.png)
+
 Codified in this repository is:
 
 - The AWS cloud infrastructure that the frontend and backend run on
@@ -14,7 +16,10 @@ Codified in this repository is:
 
 A CI/CD tool called [Travis](https://travis-ci.com/) is employed to automatically build and publish the Docker containers.  Containers are automatically applied to the production Kubernetes cluster.
 
+![travis-integration](./udagram-travis.png)
+
 ## Docker Containers
 
 Look for the `Dockerfile` in the various subdirectories of the source code.  Each one describes how the `node` service will be created, how the `ionic` frontent framework is defined or how the `nginx` reverse proxy is configured.  The containers can be built and pushed using a `docker-compose` configuration.
 
+![docker-hub](./udagram-docker.png)
