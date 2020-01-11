@@ -107,3 +107,9 @@ Apply the settings, services and deployments using `kubectl` and the command
 A resource group was created for the EKS cluster.  System resources can be monitored through the dashboard:
 
 ![aws-cloudwatch](./udagram-aws-cloudwatch.png)
+=======
+## Docker Containers
+
+Look for the `Dockerfile` in the various subdirectories of the source code.  Each one describes how the `node` service will be created, how the `ionic` frontent framework is defined or how the `nginx` reverse proxy is configured.  The containers can be built and pushed using a `docker-compose` configuration.
+
+![docker-hub](./udagram-docker.png)
