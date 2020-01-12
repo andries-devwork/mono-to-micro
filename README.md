@@ -35,6 +35,7 @@ docker-compose -f udacity-c3-deployment/docker/docker-compose-build.yaml push
 ### Running the containers locally
 
 Before you get started, ensure that the following variables are declared in your environment:
+
 - `POSTGRESS_USERNAME`
 - `POSTGRESS_PASSWORD`
 - `POSTGRESS_DB`
@@ -76,8 +77,8 @@ Apply the settings, services and deployments using `kubectl` and the command
 
 5. Verify that all of the pods started successfully by verifying that they are in the `Running` state.
 
-    ```
-    > kubectl get pods
+    ```bash
+    $ kubectl get pods
 
     NAME                            READY   STATUS    RESTARTS   AGE
     backend-feed-745b7ffb7b-twqwm   1/1     Running   0          30h
@@ -87,6 +88,8 @@ Apply the settings, services and deployments using `kubectl` and the command
     ```
 
 ## Project Submission Criteria
+
+### Project instructions
 
 - [x] Screenshot of TravisCI which shows the successful build and deploy steps
 - [x] The public GitHub repo and the docker hub images
@@ -107,9 +110,3 @@ Apply the settings, services and deployments using `kubectl` and the command
 A resource group was created for the EKS cluster.  System resources can be monitored through the dashboard:
 
 ![aws-cloudwatch](./udagram-aws-cloudwatch.png)
-=======
-## Docker Containers
-
-Look for the `Dockerfile` in the various subdirectories of the source code.  Each one describes how the `node` service will be created, how the `ionic` frontent framework is defined or how the `nginx` reverse proxy is configured.  The containers can be built and pushed using a `docker-compose` configuration.
-
-![docker-hub](./udagram-docker.png)
